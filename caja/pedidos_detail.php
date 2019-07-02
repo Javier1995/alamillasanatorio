@@ -25,46 +25,16 @@
 <?php if(isset($_SESSION['nick']) && $_SESSION['nick']=='admin'): ?>
 
 <input type="hidden" value="<?=$id?>" id="id_detail">
-<!-- CONTENIDO -->
 
-
-
-<!-- LISTA DE PEDIDOS -->
 <div class="row">
+  <!-- LISTA DE PEDIDOS -->
   <div class="col l8 s12">
     <div class="orderByCashout"></div>
   </div>
+
+<!--MONTO DE GASTO -->
   <div class="col l4 s12">
-
-    <div class="card">
-
-      <div class="card-content">
-        <span class="card-title">Detalles del corte de caja</span>
-        <div class="row">
-            <div class="col s12 l12">
-            <table>
-
-                <thead>
-                    <tr>
-                        <th>Monto del corte</th>
-                        <th>N° productos vendidos</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                        <tr>
-                            <td>$<?=number_format(10, 2)?></td>
-                            <td><?=20?> pieza(s)</td>
-                        </tr>
-                </tbody>
-
-            </table>
-
-        </div>
-      </div>
-
-    </div>
-
+    <div class="mount"></div>
   </div>
 
 </div>
