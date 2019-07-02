@@ -1,0 +1,12 @@
+[02-Dec-2018 03:36:01 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 03:36:26 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 04:10:57 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 04:11:21 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 04:11:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:64) in /home/qrlolsizabci/public_html/www/alamillasanatorio/usuarios/cambio_constrasena_admin.php.php on line 32
+[02-Dec-2018 04:12:02 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 04:12:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:64) in /home/qrlolsizabci/public_html/www/alamillasanatorio/usuarios/cambio_constrasena_admin.php.php on line 41
+[02-Dec-2018 04:12:14 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 04:12:14 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 04:12:18 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 04:12:25 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 04:12:25 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:64) in /home/qrlolsizabci/public_html/www/alamillasanatorio/usuarios/cambio_constrasena_admin.php.php on line 32

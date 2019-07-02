@@ -1,0 +1,46 @@
+[03-Dec-2018 04:53:22 UTC] PHP Warning:  require_once(../../fpdf/fpdf.php): failed to open stream: No such file or directory in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php on line 4
+[03-Dec-2018 04:53:22 UTC] PHP Fatal error:  require_once(): Failed opening required '../../fpdf/fpdf.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php on line 4
+[03-Dec-2018 05:36:59 UTC] PHP Warning:  require_once(../../fpdf/fpdf.php): failed to open stream: No such file or directory in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php on line 4
+[03-Dec-2018 05:36:59 UTC] PHP Fatal error:  require_once(): Failed opening required '../../fpdf/fpdf.php' (include_path='.:/opt/alt/php56/usr/share/pear:/opt/alt/php56/usr/share/php') in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php on line 4
+[03-Dec-2018 05:37:31 UTC] PHP Warning:  getimagesize(img/hospi.jpg): failed to open stream: No such file or directory in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php on line 1240
+[03-Dec-2018 05:37:31 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Missing or incorrect image file: img/hospi.jpg' in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php:271
+Stack trace:
+#0 /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php(1242): FPDF->Error('Missing or inco...')
+#1 /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php(885): FPDF->_parsejpg('img/hospi.jpg')
+#2 /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php(18): FPDF->Image('img/hospi.jpg', 2, 4, 60, 0, 'JPG')
+#3 {main}
+  thrown in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php on line 271
+[03-Dec-2018 05:39:09 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Not a JPEG file: img/receta.png' in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php:271
+Stack trace:
+#0 /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php(1244): FPDF->Error('Not a JPEG file...')
+#1 /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php(885): FPDF->_parsejpg('img/receta.png')
+#2 /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php(18): FPDF->Image('img/receta.png', 2, 4, 60, 0, 'JPG')
+#3 {main}
+  thrown in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php on line 271
+[03-Dec-2018 05:45:53 UTC] PHP Parse error:  syntax error, unexpected '$pdf' (T_VARIABLE) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php on line 9
+[03-Dec-2018 06:11:41 UTC] PHP Notice:  Undefined variable: fpdf in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php on line 21
+[03-Dec-2018 06:11:41 UTC] PHP Fatal error:  Call to a member function SetXY() on null in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php on line 21
+[03-Dec-2018 06:34:13 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Some data has already been output, can't send PDF file' in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php:271
+Stack trace:
+#0 /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php(1063): FPDF->Error('Some data has a...')
+#1 /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php(999): FPDF->_checkoutput()
+#2 /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php(29): FPDF->Output()
+#3 {main}
+  thrown in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php on line 271
+[03-Dec-2018 06:34:28 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Some data has already been output, can't send PDF file' in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php:271
+Stack trace:
+#0 /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php(1063): FPDF->Error('Some data has a...')
+#1 /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php(999): FPDF->_checkoutput()
+#2 /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php(29): FPDF->Output()
+#3 {main}
+  thrown in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php on line 271
+[03-Dec-2018 06:35:11 UTC] PHP Warning:  Illegal string offset 'paciente' in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php on line 27
+[03-Dec-2018 06:35:11 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'FPDF error: Some data has already been output, can't send PDF file' in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php:271
+Stack trace:
+#0 /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php(1063): FPDF->Error('Some data has a...')
+#1 /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php(999): FPDF->_checkoutput()
+#2 /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php(29): FPDF->Output()
+#3 {main}
+  thrown in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/fpdf/fpdf.php on line 271
+[03-Dec-2018 06:45:13 UTC] PHP Fatal error:  Call to undefined function ulfirst() in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php on line 25
+[03-Dec-2018 06:45:54 UTC] PHP Parse error:  syntax error, unexpected '$pdf' (T_VARIABLE) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/pdf/recetario.php on line 27

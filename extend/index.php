@@ -1,0 +1,3 @@
+<?php
+//Regresa
+header("Location:../");

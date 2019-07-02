@@ -1,0 +1,543 @@
+[02-Dec-2018 16:15:54 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[02-Dec-2018 16:15:54 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[02-Dec-2018 16:15:54 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[02-Dec-2018 16:15:54 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[02-Dec-2018 16:15:54 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[02-Dec-2018 16:15:54 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[02-Dec-2018 16:15:54 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[02-Dec-2018 16:15:54 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[02-Dec-2018 16:15:54 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 16:15:54 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[02-Dec-2018 16:15:54 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[02-Dec-2018 16:15:54 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[02-Dec-2018 16:15:54 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[02-Dec-2018 16:15:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 51
+[02-Dec-2018 16:31:00 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 19
+[02-Dec-2018 16:31:04 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 19
+[02-Dec-2018 16:31:21 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 19
+[02-Dec-2018 16:33:06 UTC] PHP Notice:  Undefined variable: pacientes in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 18
+[02-Dec-2018 16:35:12 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 11
+[02-Dec-2018 16:35:16 UTC] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 11
+[02-Dec-2018 16:39:15 UTC] PHP Notice:  Undefined variable: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 18
+[02-Dec-2018 16:40:14 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on string in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 12
+[02-Dec-2018 16:40:34 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on string in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:41:28 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on string in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:43:14 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:43:14 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:43:14 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 20
+[02-Dec-2018 16:43:43 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:43:43 UTC] PHP Notice:  Undefined variable: buqueda in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:43:43 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:43:43 UTC] PHP Notice:  Undefined variable: buqueda in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:44:00 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:44:00 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:44:00 UTC] PHP Notice:  Undefined variable: buqueda in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:44:00 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:44:00 UTC] PHP Notice:  Undefined variable: buqueda in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:44:03 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:44:03 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:44:03 UTC] PHP Notice:  Undefined variable: buqueda in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:44:03 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:44:03 UTC] PHP Notice:  Undefined variable: buqueda in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:44:29 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:44:29 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:44:33 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:44:33 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:44:44 UTC] PHP Notice:  Undefined index: busqueda in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:44:44 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:44:44 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:45:21 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:45:21 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:45:24 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:45:24 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:45:50 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:45:50 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:46:09 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:46:09 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 14
+[02-Dec-2018 16:46:34 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:46:34 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:46:37 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:46:37 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:48:34 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:48:34 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:48:47 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:48:47 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:48:51 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:48:51 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:52:05 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:52:05 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:52:33 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:52:33 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:52:36 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:52:36 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:53:22 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:53:22 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 16:56:30 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 16:56:30 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 16:58:51 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 16:58:51 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 16:58:51 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 16:59:00 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 16:59:00 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 16:59:15 UTC] PHP Notice:  Undefined index: busqueda in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 16:59:15 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 16:59:15 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:00:23 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:00:23 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:00:23 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:00:37 UTC] PHP Notice:  Undefined index: busqueda in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:00:37 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:00:37 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:00:41 UTC] PHP Notice:  Undefined index: busqueda in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:00:41 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:00:41 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:00:53 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:00:53 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:00:53 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:01:35 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 18
+[02-Dec-2018 17:01:35 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 18
+[02-Dec-2018 17:01:35 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 18
+[02-Dec-2018 17:01:57 UTC] PHP Notice:  Undefined variable: dato in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:01:57 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:01:57 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:01 UTC] PHP Notice:  Undefined variable: dato in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:01 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:01 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:13 UTC] PHP Notice:  Undefined variable: dato in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:13 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:13 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:32 UTC] PHP Notice:  Undefined variable: dato in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:32 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:32 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:32 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 19
+[02-Dec-2018 17:02:45 UTC] PHP Notice:  Undefined variable: dato in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:45 UTC] PHP Notice:  Undefined index: busqueda in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:45 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:45 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:45 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 19
+[02-Dec-2018 17:02:48 UTC] PHP Notice:  Undefined variable: dato in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:48 UTC] PHP Notice:  Undefined index: busqueda in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:48 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:48 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:02:48 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 19
+[02-Dec-2018 17:03:13 UTC] PHP Fatal error:  Cannot use [] for reading in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:03:17 UTC] PHP Fatal error:  Cannot use [] for reading in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:03:30 UTC] PHP Fatal error:  Cannot use [] for reading in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:03:43 UTC] PHP Fatal error:  Cannot use [] for reading in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:03:52 UTC] PHP Fatal error:  Cannot use [] for reading in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 16
+[02-Dec-2018 17:07:55 UTC] PHP Notice:  Undefined index: pacientes in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 17:07:55 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 17:07:55 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/busqueda_paciente.php on line 15
+[02-Dec-2018 19:02:13 UTC] PHP Warning:  date() expects at least 1 parameter, 0 given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 36
+[02-Dec-2018 20:48:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[02-Dec-2018 20:48:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[02-Dec-2018 20:48:22 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[02-Dec-2018 20:48:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[02-Dec-2018 20:48:22 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[02-Dec-2018 20:48:22 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[02-Dec-2018 20:48:22 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[02-Dec-2018 20:48:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[02-Dec-2018 20:48:22 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 20:48:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[02-Dec-2018 20:48:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[02-Dec-2018 20:48:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[02-Dec-2018 20:48:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[02-Dec-2018 20:48:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 77
+[02-Dec-2018 21:34:10 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[02-Dec-2018 21:34:10 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[02-Dec-2018 21:34:10 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[02-Dec-2018 21:34:10 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[02-Dec-2018 21:34:10 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[02-Dec-2018 21:34:10 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[02-Dec-2018 21:34:10 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[02-Dec-2018 21:34:10 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[02-Dec-2018 21:34:10 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 21:34:10 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[02-Dec-2018 21:34:10 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[02-Dec-2018 21:34:10 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[02-Dec-2018 21:34:10 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[02-Dec-2018 21:34:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 100
+[02-Dec-2018 22:20:27 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[02-Dec-2018 22:20:27 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[02-Dec-2018 22:20:27 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[02-Dec-2018 22:20:27 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[02-Dec-2018 22:20:27 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[02-Dec-2018 22:20:27 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[02-Dec-2018 22:20:27 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[02-Dec-2018 22:20:27 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[02-Dec-2018 22:20:27 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 22:20:27 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[02-Dec-2018 22:20:27 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[02-Dec-2018 22:20:27 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/nuevo.php on line 2
+[02-Dec-2018 22:20:27 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/nuevo.php on line 2
+[02-Dec-2018 22:20:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/nuevo.php on line 62
+[02-Dec-2018 22:35:07 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[02-Dec-2018 22:35:07 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[02-Dec-2018 22:35:07 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[02-Dec-2018 22:35:07 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[02-Dec-2018 22:35:07 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[02-Dec-2018 22:35:07 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[02-Dec-2018 22:35:07 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[02-Dec-2018 22:35:07 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[02-Dec-2018 22:35:07 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 22:35:07 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[02-Dec-2018 22:35:07 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[02-Dec-2018 22:35:07 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/nuevo.php on line 2
+[02-Dec-2018 22:35:07 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/nuevo.php on line 2
+[02-Dec-2018 22:35:07 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/nuevo.php on line 62
+[02-Dec-2018 22:42:32 UTC] PHP Notice:  Undefined index: errores in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 27
+[02-Dec-2018 22:42:32 UTC] PHP Notice:  Undefined variable: id in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 29
+[02-Dec-2018 22:42:32 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 32
+[02-Dec-2018 22:44:06 UTC] PHP Notice:  Undefined index: errores in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 27
+[02-Dec-2018 22:44:06 UTC] PHP Notice:  Undefined variable: id in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 29
+[02-Dec-2018 22:44:06 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 32
+[02-Dec-2018 22:44:27 UTC] PHP Notice:  Undefined index: errores in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 27
+[02-Dec-2018 22:44:27 UTC] PHP Notice:  Undefined variable: id in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 29
+[02-Dec-2018 22:44:27 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 32
+[02-Dec-2018 22:45:12 UTC] PHP Notice:  Undefined index: errores in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 27
+[02-Dec-2018 22:45:12 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 36
+[02-Dec-2018 22:48:03 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 19
+[02-Dec-2018 22:48:04 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 19
+[02-Dec-2018 22:48:27 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 19
+[02-Dec-2018 22:48:43 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 19
+[02-Dec-2018 22:48:58 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 19
+[02-Dec-2018 22:49:56 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 19
+[02-Dec-2018 22:49:57 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 19
+[02-Dec-2018 22:50:47 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 19
+[02-Dec-2018 22:50:50 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 19
+[02-Dec-2018 22:51:11 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 19
+[02-Dec-2018 22:51:12 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 19
+[02-Dec-2018 22:51:14 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_paciente.php on line 19
+[02-Dec-2018 23:29:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[02-Dec-2018 23:29:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[02-Dec-2018 23:29:57 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[02-Dec-2018 23:29:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[02-Dec-2018 23:29:57 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[02-Dec-2018 23:29:57 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[02-Dec-2018 23:29:57 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[02-Dec-2018 23:29:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[02-Dec-2018 23:29:57 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[02-Dec-2018 23:29:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[02-Dec-2018 23:29:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[02-Dec-2018 23:29:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[02-Dec-2018 23:29:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[02-Dec-2018 23:29:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 100
+[02-Dec-2018 23:36:26 UTC] PHP Notice:  Undefined index: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 8
+[02-Dec-2018 23:36:26 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 33
+[02-Dec-2018 23:37:37 UTC] PHP Notice:  Array to string conversion in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 16
+[03-Dec-2018 00:37:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 00:37:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 00:37:57 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 00:37:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 00:37:57 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:37:57 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:37:57 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[03-Dec-2018 00:37:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[03-Dec-2018 00:37:57 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 00:37:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 00:37:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[03-Dec-2018 00:37:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[03-Dec-2018 00:37:57 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[03-Dec-2018 00:37:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 77
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[03-Dec-2018 00:38:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 77
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/nuevo.php on line 2
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/nuevo.php on line 2
+[03-Dec-2018 00:38:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/nuevo.php on line 64
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[03-Dec-2018 00:38:00 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[03-Dec-2018 00:38:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 77
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 00:38:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 124
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[03-Dec-2018 00:38:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 77
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 00:38:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 124
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[03-Dec-2018 00:38:05 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[03-Dec-2018 00:38:05 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 77
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 2
+[03-Dec-2018 02:01:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 77
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 39
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 40
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 57
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 02:01:22 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 02:01:22 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:57) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 124
+[03-Dec-2018 02:47:56 UTC] PHP Notice:  Undefined variable: usario in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_consulta.php on line 25
+[03-Dec-2018 02:47:56 UTC] PHP Notice:  Undefined variable: id in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/helpers.php on line 391
+[03-Dec-2018 02:55:43 UTC] PHP Notice:  Undefined variable: usario in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_consulta.php on line 25
+[03-Dec-2018 02:56:33 UTC] PHP Notice:  Undefined variable: usario in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_consulta.php on line 25
+[03-Dec-2018 02:56:38 UTC] PHP Notice:  Undefined variable: usario in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/guardar_consulta.php on line 25
+[03-Dec-2018 03:54:47 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 03:57:06 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 32
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 42
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 45
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 59
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 04:49:31 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 04:49:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:59) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 122
+[03-Dec-2018 08:13:36 UTC] PHP Notice:  Trying to get property of non-object in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 7
+[03-Dec-2018 08:14:06 UTC] PHP Notice:  Trying to get property of non-object in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 8
+[03-Dec-2018 08:14:43 UTC] PHP Notice:  Trying to get property of non-object in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 8
+[03-Dec-2018 08:18:01 UTC] PHP Notice:  Trying to get property of non-object in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 8
+[03-Dec-2018 08:22:59 UTC] PHP Notice:  Trying to get property of non-object in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 7
+[03-Dec-2018 15:46:01 UTC] PHP Notice:  Undefined index: edit in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 8
+[03-Dec-2018 15:46:01 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 38
+[03-Dec-2018 15:46:01 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 43
+[03-Dec-2018 15:46:01 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 49
+[03-Dec-2018 16:02:01 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:02:01 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:02:01 UTC] PHP Fatal error:  Call to undefined function Elimina_id_url() in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 85
+[03-Dec-2018 16:02:34 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:02:34 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:02:34 UTC] PHP Fatal error:  Call to undefined function Elimina_id_url() in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 85
+[03-Dec-2018 16:03:09 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:03:09 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:03:33 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:03:33 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:05:23 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:05:23 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:05:54 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:05:54 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:06:25 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:06:25 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:07:02 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:07:02 UTC] PHP Notice:  Undefined variable: _SESSION in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 2
+[03-Dec-2018 16:07:34 UTC] PHP Notice:  Undefined variable: con in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 16
+[03-Dec-2018 16:07:34 UTC] PHP Fatal error:  Call to a member function real_escape_string() on null in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_paciente.php on line 16
+[03-Dec-2018 16:23:31 UTC] PHP Notice:  Undefined variable: id in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/helpers.php on line 462
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 32
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 42
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 45
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 59
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 20:03:16 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 20:03:16 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:59) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 137
+[03-Dec-2018 21:02:46 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 21:02:47 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 21:02:47 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 32
+[03-Dec-2018 21:02:47 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 21:02:47 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 21:02:47 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 21:02:47 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 21:02:47 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 21:02:47 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 42
+[03-Dec-2018 21:02:47 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 21:02:47 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 45
+[03-Dec-2018 21:02:47 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 59
+[03-Dec-2018 21:02:47 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 21:02:47 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 21:02:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:59) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 137
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 32
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 42
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 45
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 59
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 22:12:26 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[03-Dec-2018 22:12:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:59) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 137
+[03-Dec-2018 22:32:22 UTC] PHP Notice:  Undefined index: pacientes in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 131
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 32
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 42
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 45
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 59
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[04-Dec-2018 00:49:08 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[04-Dec-2018 00:49:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:59) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 137
+[04-Dec-2018 01:03:05 UTC] PHP Notice:  Undefined index: re in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 9
+[04-Dec-2018 01:03:05 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 40
+[04-Dec-2018 01:03:05 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 40
+[04-Dec-2018 01:03:05 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 46
+[04-Dec-2018 01:03:05 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 52
+[04-Dec-2018 01:03:05 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 74
+[04-Dec-2018 01:03:05 UTC] PHP Notice:  Undefined variable: num_row in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 88
+[04-Dec-2018 01:03:37 UTC] PHP Notice:  Undefined index: re in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 9
+[04-Dec-2018 01:03:37 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 40
+[04-Dec-2018 01:03:37 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 40
+[04-Dec-2018 01:03:37 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 46
+[04-Dec-2018 01:03:37 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 52
+[04-Dec-2018 01:03:37 UTC] PHP Notice:  Undefined variable: paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 74
+[04-Dec-2018 01:03:37 UTC] PHP Notice:  Undefined variable: num_row in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 88
+[04-Dec-2018 01:14:34 UTC] PHP Notice:  Undefined index: id in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/edit_receta.php on line 75
+[04-Dec-2018 01:27:39 UTC] PHP Notice:  Undefined variable: id_paciente in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/helpers.php on line 522
+[04-Dec-2018 01:27:39 UTC] PHP Notice:  Undefined variable: id in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/helpers.php on line 522
+[04-Dec-2018 01:30:21 UTC] PHP Notice:  Undefined property: mysqli::$1 in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/helpers.php on line 525
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 32
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 42
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 45
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 59
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[04-Dec-2018 05:04:23 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 2
+[04-Dec-2018 05:04:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:59) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/paciente.php on line 138
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 32
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 42
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 45
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 59
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 3
+[04-Dec-2018 15:21:12 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 3
+[04-Dec-2018 15:21:12 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:59) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 150
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 32
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 42
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 45
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 59
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 3
+[04-Dec-2018 18:08:50 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 3
+[04-Dec-2018 18:08:50 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:59) in /home/qrlolsizabci/public_html/www/alamillasanatorio/recetario/index.php on line 150

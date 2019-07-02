@@ -1,0 +1,14 @@
+[03-Dec-2018 05:04:41 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 27
+[03-Dec-2018 05:04:41 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 30
+[03-Dec-2018 05:04:41 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 32
+[03-Dec-2018 05:04:41 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 7
+[03-Dec-2018 05:04:41 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 8
+[03-Dec-2018 05:04:41 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 05:04:41 UTC] PHP Notice:  Undefined index: apellidos in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/menu_venta.php on line 10
+[03-Dec-2018 05:04:41 UTC] PHP Notice:  Undefined index: foto in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 41
+[03-Dec-2018 05:04:41 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 42
+[03-Dec-2018 05:04:41 UTC] PHP Notice:  Undefined index: nombre in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 43
+[03-Dec-2018 05:04:41 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 45
+[03-Dec-2018 05:04:41 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php on line 59
+[03-Dec-2018 05:04:41 UTC] PHP Notice:  Undefined index: nivel in /home/qrlolsizabci/public_html/www/alamillasanatorio/inventario/index.php on line 2
+[03-Dec-2018 05:04:41 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/qrlolsizabci/public_html/www/alamillasanatorio/extend/header.php:59) in /home/qrlolsizabci/public_html/www/alamillasanatorio/inventario/index.php on line 15
