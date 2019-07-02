@@ -15,17 +15,12 @@ $header = array('Folio','Fecha', 'N° de productos', 'Realizado por', 'Detalle')
 $orders = array('datos'=>array(),'pages'=>$paginas, 'current_page'=>$current_page, 'adjacent'=>$adjacent, 'limit'=>$limit, 'header'=>$header, 'rows'=>$num_rows);
 
 $pedidos = $caja->getOrders($limit, $offset);
-
-
-
-
-$j = 0;
-
 while($pedido = $pedidos->fetch_assoc()){
     $pedido['n_productos'] = $caja->getCantidadProducto($pedido['id']);
     array_push($orders['datos'], $pedido);
-   $j++;
+   
 }
+
 
 
 echo json_encode($orders);

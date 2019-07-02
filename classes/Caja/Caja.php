@@ -76,13 +76,13 @@ class Caja  {
         $query = $this->connectDB->query($sql);
         $result = $query->fetch_object();
 
-        $res = $result->num_producto.' producto';
+        $res = $result->num_producto ;
         $contable = '';
         if($result->num_producto > 1) {
             $contable = 's';
         }
     
-        return  $res.$contable;
+        return  $res;
         
     }
     /**

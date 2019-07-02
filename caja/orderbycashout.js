@@ -1,7 +1,11 @@
-var OrderDetail = document.getElementsByClassName('orderByCashout')[0];;
-var monto = document.getElementsByClassName('mount')[0];
+var OrderDetail = document.getElementsByClassName('orderByCashout')[0];
+var mount = document.getElementsByClassName('mount')[0];
 OrderDetail.addEventListener("load", PaginationOrderByCashOut());
-monto.addEventListener("load", ShowMount());
+const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 2
+})
 
 
 function PaginationOrderByCashOut(page = null, limit = null) {
@@ -20,7 +24,8 @@ function PaginationOrderByCashOut(page = null, limit = null) {
             console.log(result.datos);
             var table = '';
             if (result.pages != 0) {
-
+                
+                var monto_total_por_pedido = 0;
                 var right = ((result.pages == result.current_page + 1)) ? 'class="disabled"' : 'class="waves-effect"  onclick="PaginationOrderByCashOut(' + ((result.current_page + 2)) + ',' + result.limit + ')"';
                 var left = ((result.current_page - 1) == -1) ? 'class="disabled"' : 'class="waves-effect"  onclick="PaginationOrderByCashOut(' + ((result.current_page)) + ',' + result.limit + ')"';
 
@@ -55,6 +60,7 @@ function PaginationOrderByCashOut(page = null, limit = null) {
                     table += '<td>' + result.datos[i].usuario + '</td>';
                     table += '<td><a href="../venta/pedido?pe=' + result.datos[i].id + '" class="btn btn-floating"><i class="material-icons">remove_red_eye</i></a></td>';
                     table += '</tr>';
+                    monto_total_por_pedido+= parseInt(result.datos[i].n_productos);
 
                 }
                 table += '</tbody>';
@@ -84,6 +90,9 @@ function PaginationOrderByCashOut(page = null, limit = null) {
 
                 table += '</div>';
 
+                //Call showMount function
+                ShowMount(result.total_pedido_monto, monto_total_por_pedido);
+
             } else {
 
                 table += '<h4>No hay lista de pedidos actualmente</h4>';
@@ -103,17 +112,14 @@ function PaginationOrderByCashOut(page = null, limit = null) {
 
 
 
-function ShowMount(monte = null, tproductos) {
+function ShowMount(monto = null, tproductos = null) {
     var table = '';
-
     table += '<div class="card">';
-
     table += '<div class="card-content">';
-    table += '<span class="card-title">Detalles del corte de caja</span>;
+    table += '<span class="card-title">Detalles del corte de caja</span>';
     table += '<div class="row">';
     table += '<div class="col s12 l12">';
     table += '<table>';
-
     table += '<thead>';
     table += '<tr>';
     table += '<th>Monto del corte</th>';
@@ -122,16 +128,15 @@ function ShowMount(monte = null, tproductos) {
     table += '</thead>';
     table += '<tbody>';
     table += '<tr>';
-    table += '<td></td>';
-    table += '<td></td>';
+    table += '<td>'+ formatter.format(monto)+'</td>';
+    table += '<td>'+tproductos+' producto(s)</td>';
     table += '</tr>';
     table += '</tbody>';
-
     table += '</table>';
+    table += '</div>';
+    table += '</div>';
 
-    '</div>';
-    '</div>'
-
-    '</div>'
-
+    table +='</div>';
+    mount.innerHTML =  table;
 }
+
