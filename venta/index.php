@@ -1,36 +1,54 @@
 <?php include_once './selected.php'; ?>
 <?php include_once '../extend/header.php'; ?>
 <?php if ($_SESSION['nivel'] == 'ADMINISTRADOR' || $_SESSION['nivel'] == 'VENTA'): ?>
-<!-- <div class="row">
-        <div class="col s12 l3">
-            <div class="card blue lighten-3 ">
-                <div class="card-content">
-                    <span class="card-title">Ventas <i class="material-icons small left">
-                            shopping_cart
-                        </i></span>
-                    <div class="row">
-                        <div class="col s6 112">
 
-                            <h3>33</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
 <div class="row">
     <div class="col s12 l3 ">
         <div class="card orange lighten-3 ">
             <div class="card-content">
-                <span class="card-title">Medicamentos<i class="fa fa-medkit left" aria-hidden="true"></i></span>
+                <span class="card-title">Monto vendido<i class="small material-icons left" aria-hidden="true">monetization_on</i></span>
                 <div class="row">
                     <div class="col s6 112">
-                        <h3>33</h3>
+                        <h3><div id="total_vendido"></div></h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="col s12 l3">
+            <div class="card blue lighten-3 ">
+                <div class="card-content">
+                    <span class="card-title">Pedidos <i class="material-icons small left">
+                        view_list
+                        </i></span>
+                    <div class="row">
+                        <div class="col s6 112">
+                            <h3><div id="pedidos"></div></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s12 l3">
+            <div class="card orange lighten-3 ">
+                <div class="card-content">
+                    <span class="card-title">Productos <i class="material-icons small left">
+                    shopping_cart
+                        </i></span>
+                    <div class="row">
+                        <div class="col s12 112">
+                            <h3><div id="productos"></div></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
+
+
+      
+
 
 <div class="row">
     <div class="col l12 s12">
