@@ -6,6 +6,7 @@ $pedidos = $caja->getOrders();
 $resultado = array();
 $total = 0;
 $productos = 0;
+//Comments
 while($pedido = $pedidos->fetch_object()){
     $total+= $pedido->total;
     $productos+= $caja->getCantidadProducto($pedido->id);
