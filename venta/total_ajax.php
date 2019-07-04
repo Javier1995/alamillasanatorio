@@ -15,7 +15,11 @@ $resultado['total'] = $total;
 $resultado['productos'] = $productos;
 
 
-//Impresión del Formato Json
+
+//Impresión del Formato JSON
+//JSON encode 
+//json encode
 echo json_encode($resultado);
+
 
 

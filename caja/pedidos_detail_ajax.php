@@ -29,6 +29,9 @@ while($order = $orders->fetch_assoc()){
     $i++;
 }
 $result['total_pedido_monto'] = $total_pedido_monto;
+
+
+//Getting a json result
 echo json_encode($result);
 
 
