@@ -13,4 +13,9 @@ while($pedido = $pedidos->fetch_object()){
 }
 $resultado['total'] = $total;
 $resultado['productos'] = $productos;
+
+
+//Impresión del Formato Json
 echo json_encode($resultado);
+
+
