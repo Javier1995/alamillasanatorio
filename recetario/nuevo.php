@@ -13,12 +13,12 @@
 
                         <div class="row">
 
-                            <div class="col s12 l4 input-field fadeInRight  animated fast delay-1s">
+                            <div class="col s12 l4 input-field ">
                                 <label for="nombre">Nombre</label>
                                 <input  type="text" id="nombre" onkeyup="may(this.value, this.id)" autofocus="on">
 
                             </div>
-                            <div class="col s12 l5 input-field fadeInRight  animated fast delay-1s">
+                            <div class="col s12 l5 input-field ">
                                 <label for="apellidos">Apellidos</label>
                                 <input type="text" id="apellidos" onkeyup="may(this.value, this.id)">
 
@@ -27,7 +27,6 @@
                             <div class="col s12 l3 input-field">
                                 <label for="nacimiento">Fecha de nacimiento</label>
                                 <input type="text" id="nacimiento" class="datepicker">
-
                             </div>
                         </div>
                          

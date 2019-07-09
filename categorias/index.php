@@ -28,7 +28,7 @@ $row_num = $categoria->num_rows;
                             <tr>
                                 <th>Nombre</th>
                                 <th>Editar</th>
-                                <th>Borrar</th>
+                               <!--  <th>Borrar</th> -->
                             </tr>
                         </thead>
 
@@ -41,8 +41,8 @@ $row_num = $categoria->num_rows;
 
                                 <td><a href="edit.php?id=<?=$row['id']?>" class="btn-floating"> <i class="material-icons">edit</i></a></td>
 
-                                <td><a href="delete.php?id=<?=$row['id']?>" class="btn-floating red"> <i class="material-icons">delete</i></a></td>
-                            </tr>
+<!--                                 <td><a href="delete.php?id=<?=$row['id']?>" class="btn-floating red"> <i class="material-icons">delete</i></a></td>
+ -->                            </tr>
                             <?php endwhile;?>
                         </tbody>
 

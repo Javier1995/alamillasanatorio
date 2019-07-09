@@ -1,8 +1,9 @@
 </main>
 <script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="../js/print.min.js"></script>
-<script type="text/javascript" src="../js/materialize.js"></script>
 <script type="text/javascript" src="../js/materialize.min.js"></script>
+<script type="text/javascript" src="../js/print.min.js"></script>
+<!-- <script type="text/javascript" src="../js/materialize.js"></script> -->
+
 <script type="text/javascript" src="../js/sweetalert.min.js"></script>
 <script type="text/javascript"  src="../js/buscador.js"></script>
 <script type="text/javascript"  src="../js/jquery-confirm.min.js"></script>

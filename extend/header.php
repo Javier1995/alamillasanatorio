@@ -18,8 +18,8 @@ if (!isset($_SESSION['nick'])) {
         <link rel="stylesheet" href="../css/font-awesome.min.css">
         <link rel="stylesheet" href="../css/jquery-confirm.css" type="text/css">
         <link rel="icon" href="../img/logoalamilla.png" type="image/png">
-        <link rel="stylesheet" href="../css/animation.css">
-        <link rel="stylesheet" href="../css/print.min.css"/>
+         <!-- <link rel="stylesheet" href="../css/animation.css"> -->
+        <link rel="stylesheet" href="../css/print.min.css"/> 
         <link rel="stylesheet" href="../css/style.css">
         <title>Alamilla</title>
     </head>

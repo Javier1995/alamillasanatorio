@@ -16,16 +16,21 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         $id_usuario = $_SESSION['id'];
         if (isset($_SESSION['medicamento']['cart'])) {
             foreach ($_SESSION['medicamento']['cart'] as $index => $value) {
+                
+                $value['descuento'] = (strlen($value['descuento']) == 0)? 0 : $value['descuento'];
                 $subtotal += ($value['precio'] * $value['unidad']);
                 $descuento += ($value['precio'] * $value['unidad']) * ($value['descuento'] / 100);
                 $total += ($value['precio'] * $value['unidad']) - ($value['precio'] * $value['unidad']) * $value['descuento'] / 100;
+                
             }
 
             if ($money >= $total) {
                 $pedido = crea_pedido($money, $total, $id_usuario, $descuento);
                 
+                
                 if (is_int($pedido)) {
                     foreach ($_SESSION['medicamento']['cart'] as $index => $value) {
+                        $value['descuento'] = (strlen($value['descuento']) == 0)? 0 : $value['descuento'];
                         efectua_compra($value['unidad'], $value['descuento'], $value['precio'], $value['cve_medicamento'], $pedido);
                         unset($_SESSION['medicamento']['cart']);
                     }

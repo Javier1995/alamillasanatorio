@@ -72,16 +72,12 @@ class Caja  {
 
     public function getCantidadProducto($id){
         $dato = $this->connectDB->escape_string($id);
-        $sql = "SELECT COUNT(*) as 'num_producto' FROM operaciones WHERE id_pedido = $dato";
+        $sql = "SELECT SUM(cantidad) as 'num_producto' FROM operaciones WHERE id_pedido = $dato";
         $query = $this->connectDB->query($sql);
         $result = $query->fetch_object();
 
         $res = $result->num_producto ;
-        $contable = '';
-        if($result->num_producto > 1) {
-            $contable = 's';
-        }
-    
+
         return  $res;
         
     }

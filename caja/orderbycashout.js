@@ -60,7 +60,7 @@ function PaginationOrderByCashOut(page = null, limit = null) {
                     table += '<td>' + result.datos[i].usuario + '</td>';
                     table += '<td><a href="../venta/pedido?pe=' + result.datos[i].id + '" class="btn btn-floating"><i class="material-icons">remove_red_eye</i></a></td>';
                     table += '</tr>';
-                    monto_total_por_pedido+= parseInt(result.datos[i].n_productos);
+                    
 
                 }
                 table += '</tbody>';
@@ -91,7 +91,7 @@ function PaginationOrderByCashOut(page = null, limit = null) {
                 table += '</div>';
 
                 //Call showMount function
-                ShowMount(result.total_pedido_monto, monto_total_por_pedido);
+                ShowMount(result.monto_total_por_pedido, result.total_pedido);
 
             } else {
 

@@ -21,14 +21,20 @@ $orders = $caja->getOrdersByCashout($limit, $offset);
 
 
 $total_pedido_monto = 0;
-$i = 0;
+$total_pedido= 0;
+while($p = $pedidos->fetch_assoc()){
+    $total_pedido_monto+=$p['total'];
+    $total_pedido+= $caja->getCantidadProducto($p['id']);
+}
+$result['monto_total_por_pedido'] = $total_pedido_monto;
+$result['total_pedido'] = $total_pedido;
+
+
 while($order = $orders->fetch_assoc()){
     $order['n_productos'] = $caja->getCantidadProducto($order['id']);
     array_push($result['datos'], $order);
-    $total_pedido_monto+=$order['total'];
-    $i++;
 }
-$result['total_pedido_monto'] = $total_pedido_monto;
+
 
 
 //Getting a json result

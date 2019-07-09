@@ -1,3 +1,6 @@
+
+
+
 $("#busca-paciente").on("click", function (event) {
     event.preventDefault();
     const respuesta = document.getElementById("tabla-pacientes");
@@ -91,27 +94,6 @@ $("#busca-paciente").on("click", function (event) {
 
 });
 
-var date = new Date();
-var today = '12/31/' + date.getFullYear();
-
-//Datepicker para fechas
-$('.datepicker').pickadate({
-    //Traduccion del formato
-    default: 'now',
-    format: 'yyyy-mm-dd',
-    today: 'HOY',
-    clear: 'LIMPIAR',
-    close: 'CERRAR',
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 120,
-    max: today,
-    //Traducción de Meses, semanas y dias
-    monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
-    monthsShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
-    weekdaysFull: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-    weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
-    weekdaysLetter: ['D', 'L', 'M', 'X', 'J', 'V', 'S'],
-});
 
 
 
@@ -412,3 +394,23 @@ function editar_receta_medica(folio, e) {
 
 }
 
+var fecha = new Date();
+var today = '12/31/' + fecha.getFullYear();
+
+//Datepicker para fechas
+$('.datepicker').pickadate({
+    default: 'now',
+    format: 'yyyy-mm-dd',
+    today: 'HOY',
+    clear: 'LIMPIAR',
+    close: 'CERRAR',
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 120,
+    max: today,
+    //Traducción de Meses, semanas y dias
+    monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+    monthsShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+    weekdaysFull: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+    weekdaysShort: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+    weekdaysLetter: ['D', 'L', 'M', 'X', 'J', 'V', 'S'],
+});
