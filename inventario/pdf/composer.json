@@ -1,6 +1,0 @@
-{
- "require":{
- 	"spipu/html2pdf":"*"
- }
-
-}
