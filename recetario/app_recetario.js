@@ -31,27 +31,18 @@ $("#busca-paciente").on("click", function (event) {
                 showTable += 'Nombre del paciente';
                 showTable += '</th>';
                 showTable += '<th>';
-                showTable += 'Fecha nacimiento';
-                showTable += '</th>';
-                showTable += '<th>';
-                showTable += 'Edad';
+                showTable += 'Opciones';
                 showTable += '</th>';
                 showTable += '<tr>';
                 showTable += '</thead>';
-
-
                 showTable += '<tbody>';
 
                 for (var i = 0; i < pacientes.length; i++) {
                     showTable += '<tr id="'+pacientes[i].id+'">';
-
                     showTable += '<td>';
                     showTable += '<a href="paciente?paciente=' + pacientes[i].id + '">' + pacientes[i].nombre_completo + '</a>';
                     showTable += '</td>';
-                    showTable += "<td>" + pacientes[i].fecha_nacimiento + "</td>";
-                    showTable += '<td>' + pacientes[i].edad + ' Años</td>';
                     showTable += '<td>';
-
                     showTable += '<a href="#" class="btn-floating grey lighten-2 dropdown-button" href="#" data-activates="pa' + pacientes[i].id + '">';
                     showTable += '<i class="material-icons black-text">more_vert</i></a>';
                     showTable += '<ul id="pa' + pacientes[i].id + '" class="dropdown-content">';
@@ -101,8 +92,7 @@ function guardar_paciente(e) {
     e.preventDefault();
     const respuesta = document.getElementById("respuesta");
     var nombre = document.getElementById("nombre").value,
-            apellidos = document.getElementById("apellidos").value,
-            nacimiento = document.getElementById("nacimiento").value;
+        apellidos = document.getElementById("apellidos").value
     $.ajax({
         url: "guardar_paciente.php",
         type: "POST",
@@ -110,8 +100,7 @@ function guardar_paciente(e) {
         contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
         data: {
             nombre: nombre,
-            apellidos: apellidos,
-            nacimiento: nacimiento
+            apellidos: apellidos
         },
         beforeSend: function () {
             respuesta.innerHTML = '<div class="progress"><div class="indeterminate"></div></div>';
@@ -142,7 +131,6 @@ function guardar_paciente(e) {
 
                 nombre = document.getElementById("nombre").value = '';
                 apellidos = document.getElementById("apellidos").value = '';
-                nacimiento = document.getElementById("nacimiento").value = '';
                 respuesta.innerHTML = "";
                 swal("Bien", "Se ha guardado correctamente", "success").then(() => {
                     location.href = "paciente?paciente="+errores.id[0]+"";
@@ -158,12 +146,10 @@ function guardar_paciente(e) {
 
 function guardar_receta_medica(id, e) {
     e.preventDefault();
-    console.log(id);
-    
+
     const respuesta = document.getElementById("resultado_receta");
     const carga = document.getElementById("carga");
     var dato = '';
-    var diagnostico = document.getElementById("diagnosticoNuevo").value;
     var medicamento = document.getElementById("medicamentoNuevo").value;
     $.ajax({
         url: "guardar_consulta.php",
@@ -172,7 +158,6 @@ function guardar_receta_medica(id, e) {
         data: {
             id:id,
             medicamento:medicamento,
-            diagnostico:diagnostico
 
         },
         beforeSend:function() {

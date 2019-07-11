@@ -2,6 +2,7 @@
 var showTable = document.getElementsByClassName('corteCaja')[0];
 var ShowOrder = document.getElementsByClassName('pedidoList')[0];
 
+//Muestra medicamento
 showTable.addEventListener("load", PaginationCashOut());
 ShowOrder.addEventListener("load",PaginationOrder());
 
@@ -62,6 +63,7 @@ function PaginationCashOut(page = null, limit = null) {
                 '<tbody>';
 
                 for (var i = 0; i < result.datos.length; i++) {
+                
 
                     table += '<tr>';
                     table += '<td>' + result.datos[i].id + '</td>';
@@ -88,9 +90,9 @@ function PaginationCashOut(page = null, limit = null) {
                 
                 table += '</div>';
                 table += '<div class="row">';
-                table +='<div class="col l2 s2 offset-l10 offset-s10">';
-    
-                table+='<input type="number" style="width:100%" value="'+result.limit+'" onchange="PaginationCashOut(null, this.value)">';
+                table +='<div class="col l3 s3 offset-l9 offset-s9">';
+                table +='<label for="fila_corte">Numero de Filas</label>';
+                table+='<input type="number" style="width:100%"  id="fila_corte" value="'+result.limit+'" onchange="PaginationCashOut(null, this.value)">';
                 table+='</div>';
                 table+= '</div>';
                 table += '</div>';
@@ -184,8 +186,8 @@ function PaginationOrder(page = null, limit = null) {
               table += '</div>';
               table += '<div class="row">';
               table +='<div class="col l2 s2 offset-l10 offset-s10">';
-  
-              table+='<input type="number" style="width:100%" value="'+result.limit+'" onchange="PaginationOrder(null, this.value)">';
+              table +='<label for="fila_pedido">Numero de Filas</label>';
+              table+='<input type="number" style="width:100%" id="fila_pedido" value="'+result.limit+'" onchange="PaginationOrder(null, this.value)">';
               table+='</div>';
               table+= '</div>';
               table += '</div>';

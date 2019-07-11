@@ -383,8 +383,8 @@ function PaginationOrder(page = null, limit = null) {
                 table += '</div>';
                 table += '<div class="row">';
                 table += '<div class="col l2 s2 offset-l10 offset-s10">';
-
-                table += '<input type="number" style="width:100%" value="' + result.limit + '" onchange="PaginationOrder(null, this.value)">';
+                table +='<label for="fila_venta">Numero de Filas</label>';
+                table += '<input type="number" style="width:100%" id="fila_venta" value="' + result.limit + '" onchange="PaginationOrder(null, this.value)">';
                 table += '</div>';
                 table += '</div>';
                 table += '</div>';

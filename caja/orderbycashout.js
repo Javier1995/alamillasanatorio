@@ -82,8 +82,8 @@ function PaginationOrderByCashOut(page = null, limit = null) {
                 table += '</div>';
                 table += '<div class="row">';
                 table += '<div class="col l2 s2 offset-l10 offset-s10">';
-
-                table += '<input type="number" style="width:100%" value="' + result.limit + '" onchange="PaginationOrderByCashOut(null, this.value)">';
+                table +='<label for="fila_corte1">Numero de Filas</label>';
+                table += '<input type="number" style="width:100%"  id="fila_corte1" value="' + result.limit + '" onchange="PaginationOrderByCashOut(null, this.value)">';
                 table += '</div>';
                 table += '</div>';
                 table += '</div>';

@@ -42,7 +42,7 @@
 
                             </div>
 
-                            <div class="col s12 l3 input-field">
+                            <!-- <div class="col s12 l3 input-field">
                                 <label for="nacimiento">Fecha de nacimiento</label>
                                 <input type="text" id="nacimiento" value="<?=$paciente['fecha_nacimiento']?>" readonly> 
 
@@ -52,19 +52,19 @@
                                 <label for="edad">Edad</label>
                                 <input type="text" id="edad" value="<?=$paciente['edad'].' AÑOS'?>" readonly>
 
-                            </div>
+                            </div> -->
 
                         </div>
 
                         <div class="row">
 
-                            <div class="col s12 l6 input-field">
+                            <!-- <div class="col s12 l6 input-field">
                                 <label for="diagnosticoNuevo">Diagnostico</label>
                                 <textarea type="text" id="diagnosticoNuevo" class="materialize-textarea" onkeyup="may(this.value, this.id)" data-length="1318" maxlength="1318"></textarea>
 
-                            </div>
+                            </div> -->
 
-                            <div class="col s12 l6 input-field">
+                            <div class="col s12 l12 input-field">
                                 <label for="medicamentoNuevo">Medicamento</label>
                                 <textarea type="text" id="medicamentoNuevo" class="materialize-textarea" onkeyup="may(this.value, this.id)" data-length="1318" maxlength="1318"></textarea>
 

@@ -21,7 +21,7 @@ inputSearch.on('keyup', (event) => {
 });
 
 function PaginationMedicationList(page = null, limit = null, search = null) {
-    console.log(search);
+    
     $.ajax({
         url: 'medicamento_lista_ajax.php',
         data: {
@@ -46,12 +46,9 @@ function PaginationMedicationList(page = null, limit = null, search = null) {
             loading += '</div>';
             loading += '</div>';
             loading += '</div>';
-
             showListMedication.html(loading);
         },
         success: (result) => {
-            console.log('log');
-            console.log(result);
             var table = '';
             if (result.pages != 0) {
 

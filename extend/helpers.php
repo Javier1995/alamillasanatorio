@@ -360,10 +360,10 @@ function buscarPaciente($busqueda) {
     return $resultado;
 }
 
-function guardar_paciente($nombre, $apellidos, $nacimiento, $id) {
+function guardar_paciente($nombre, $apellidos, $id) {
     global $con;
     $resultado = false;
-    $query = "INSERT INTO pacientes VALUES(NULL, '$nombre', '$apellidos', '$nacimiento', CURRENT_TIMESTAMP, $id)";
+    $query = "INSERT INTO pacientes VALUES(NULL, '$nombre', '$apellidos', NULL, CURRENT_TIMESTAMP, $id)";
     $insert = $con->query($query);
     if ($insert) {
         $resultado = $con->insert_id;
@@ -386,10 +386,10 @@ function mostrar_paciente($id) {
     return $resultado;
 }
 
-function guardar_receta($id_paciente, $diagnostico, $medicamento, $id) {
+function guardar_receta($id_paciente, $medicamento, $id) {
     global $con;
     $resultado = false;
-    $query = "INSERT INTO recetas VALUES(NULL,'$medicamento', '$diagnostico',CURRENT_TIMESTAMP,$id_paciente, $id)";
+    $query = "INSERT INTO recetas VALUES(NULL,'$medicamento',NULL,CURRENT_TIMESTAMP,$id_paciente, $id)";
     $insert = $con->query($query);
     if ($insert) {
         $resultado = $con->insert_id;

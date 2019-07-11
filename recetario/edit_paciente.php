@@ -32,22 +32,18 @@
 
                         <div class="row">
 
-                            <div class="col s12 l4 input-field fadeInRight  animated fast delay-1s">
+                            <div class="col s12 l6 input-field fadeInRight  animated fast delay-1s">
                                 <label for="nombre">Nombre</label>
                                 <input value="<?=$paciente['nombre']?>" type="text" id="nombre" onkeyup="may(this.value, this.id)" autofocus="on">
 
                             </div>
-                            <div class="col s12 l5 input-field fadeInRight  animated fast delay-1s">
+                            <div class="col s12 l6 input-field fadeInRight  animated fast delay-1s">
                                 <label for="apellidos">Apellidos</label>
                                 <input value="<?=$paciente['apellidos']?>" type="text" id="apellidos" onkeyup="may(this.value, this.id)">
 
                             </div>
 
-                            <div class="col s12 l3 input-field">
-                                <label for="nacimiento">Fecha de nacimiento</label>
-                                <input value="<?=$paciente['fecha_nacimiento']?>" type="text" id="nacimiento" class="datepicker">
-
-                            </div>
+                      
                         </div>
 
                         <div class="row">
