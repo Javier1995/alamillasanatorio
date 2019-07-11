@@ -63,3 +63,12 @@
          display: block;
          width: 60px;;
     }
+
+    span.medication-count{
+      font-size: 20;
+      font-weight: bold;
+      padding-left: 1%;
+      padding-right: 1%;
+      background: #03bf3d;
+      color: #fff;
+    }

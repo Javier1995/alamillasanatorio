@@ -143,10 +143,7 @@
 
         </tr>
 
-        <tr>
-            <td colspan="5" style="width:100%; text-align: right; font-size: 10pt;">TOTAL &#36; <?= number_format($total, 2) ?></td>
-
-        </tr>
+      
         <tr>
             <td colspan="5" style="width:100%; text-align: right; font-size: 10pt;">EFECTIVO $<?= number_format($atendio->dinero, 2) ?></td>
 
@@ -155,12 +152,16 @@
             <td colspan="5" style="width:100%; text-align: right; font-size: 10pt;">CAMBIO $<?= number_format($atendio->dinero - $total, 2) ?></td>
 
         </tr>
+        <tr>
+            <td colspan="5" style="width:100%; text-align: right; font-size: 10pt;"><strong>TOTAL</strong> &#36; <?= number_format($total, 2) ?></td>
+
+        </tr>
     </table>
 
 
 
     <br>
-    <div style="font-size:11pt;text-align:center;font-weight:bold">!Un gusto atenderte!</div>
+
   
     
 

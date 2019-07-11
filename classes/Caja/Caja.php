@@ -11,7 +11,9 @@ class Caja  {
     private $order;
     private $id_user;
 
-
+    public function __construct(){
+        $this->connectDB = DB::conection();
+    }
     public function setIdUser($id){
         $this->id_user = $id;
     }
@@ -29,9 +31,7 @@ class Caja  {
         return $this->order;
     }
 
-    public function __construct(){
-        $this->connectDB = DB::conection();
-    }
+    
 
     public function getOrders($limit = null, $offset = null){
         $limitation = '';
