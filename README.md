@@ -1,7 +1,7 @@
 # alamillasanatorio
 Punto de venta
-
 Modulos:
-Venta
-Entradas
-Corte de Caja
+-Venta
+-Entradas
+-Cortes de Caja
+-Recetario
