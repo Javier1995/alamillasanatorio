@@ -1,7 +1,10 @@
 # alamillasanatorio
 Punto de venta
 Modulos:
--Venta
--Entradas
--Cortes de Caja
--Recetario
+
+<ol type="I">
+  <li>Venta</li>
+  <li>Entradas</li>
+  <li>Cortes de Caja</li>
+  <li>Recetario</li>
+</ol>
