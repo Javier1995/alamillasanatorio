@@ -27,8 +27,8 @@
         <div class="col s12 m12 l12 xl12">
             <div class="card">
                 <div class="card-content">
-                <span class="card-title">EDITAR PRODUCTO</span>    
-                    <form action="#!" method="POST" id="formulario">
+                <span class="card-title">EDITAR MEDICAMENTO</span>    
+                    <form action="javascript:avoid(0)" method="POST" id="formulario">
                     <div class="row">
                         <div class="col input-field s12 l4">
                             <label for="codigo_barras">Codigo de Barra*</label>

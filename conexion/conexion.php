@@ -10,7 +10,7 @@ if ($con->connect_errno) {
     die( "Fallo la conexion");
 }
 $con->query("SET time_zone='-6:00';");
-$con->set_charset("utf8");
+$con->set_charset("UTF8");
 
 
 //Modificar cuando se cambie de HOST 

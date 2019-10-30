@@ -47,11 +47,19 @@ function mostrarEntradas($id) {
 function guardarProductos($categoria, $cveMedicamento, $nombreGenerico, $nombrecomercial, $descripcion, $presentacion, $presioa, $preciov, $unidadesCaja, $stockMinimo, $usuario, $lote, $fechaCaducidad, $piezas) {
     global $con;
     $result = false;
-    $query = "INSERT INTO medicamentos VALUES('$cveMedicamento','$nombreGenerico', '$nombrecomercial' ,'$descripcion', NULL ,'$presentacion', $presioa, $preciov, $unidadesCaja, $stockMinimo, CURRENT_TIMESTAMP, NULL, $categoria);";
-    $query .= "INSERT INTO lotes VALUES('$lote', CURRENT_TIMESTAMP, '$fechaCaducidad', '$cveMedicamento');";
-    $query .= "INSERT INTO operaciones VALUES(NULL,$piezas, NULL, NULL, 1, '$cveMedicamento', NULL, '$lote', CURRENT_TIMESTAMP);";
-    $insert = $con->multi_query($query);
-    if ($insert) {
+    $queryMedicamento = "INSERT INTO medicamentos VALUES('$cveMedicamento','$nombreGenerico', '$nombrecomercial' ,'$descripcion', NULL ,'$presentacion', $presioa, $preciov, $unidadesCaja, $stockMinimo, CURRENT_TIMESTAMP, NULL, $categoria);";
+    $resulMedicamento = $con->query($queryMedicamento);
+    $queryLotes ="INSERT INTO lotes VALUES(NULL,'$lote', CURRENT_TIMESTAMP, '$fechaCaducidad', 1 ,'$cveMedicamento');";
+    $resultLotes = $con->query($queryLotes);
+    $idLote = $con->insert_id;
+
+     $queryOperacion = "INSERT INTO operaciones VALUES(NULL,$piezas, NULL, NULL, 1, '$cveMedicamento', NULL, $idLote, CURRENT_TIMESTAMP);";
+     $resultOperacion= $con->query($queryOperacion);
+
+
+    
+     
+    if ($resulMedicamento && $resultLotes && $resultOperacion) {
         $result = true;
     }
     return $result;
@@ -165,15 +173,25 @@ function guardar_lote($barcode, $lote, $caducidad, $cantidad) {
 
     $result = false;
     if (isset($barcode) && isset($lote) && isset($caducidad) && isset($cantidad)) {
-        $query = "INSERT INTO lotes VALUES('$lote', CURRENT_TIMESTAMP, '$caducidad', '$barcode');";
-        $query .= "INSERT INTO operaciones VALUES(NULL,$cantidad, NULL, NULL, 1, '$barcode', NULL, '$lote',CURRENT_TIMESTAMP);";
-
-        $insert = $con->multi_query($query);
+        $dato = "ninguna";
+        if(lote_exists($lote, $barcode)){
+            $value = getLote($lote, $barcode);
+            $idLote = $value->id;
+            $dato = "condicion 1";
+        } else {
+           $queryLote = "INSERT INTO lotes VALUES(null,'$lote', CURRENT_TIMESTAMP, '$caducidad', 1,'$barcode');";
+           $con->query($queryLote);
+           $idLote = $con->insert_id;
+           $dato = "condicion 2";
+        }
+    
+        $query = "INSERT INTO operaciones VALUES(NULL,$cantidad, NULL, NULL, 1, '$barcode', NULL,  $idLote, CURRENT_TIMESTAMP);";
+        $insert = $con->query($query);
         if ($insert) {
             $result = true;
         }
     }
-    return $result;
+    return $dato;
 }
 
 function mostrar_lotes($id = NULL) {
@@ -182,11 +200,10 @@ function mostrar_lotes($id = NULL) {
     $resultado = array();
     $query = "SELECT  l.cve_medicamento as 'clave', m.nombre_comercial as 'nombre_c', m.precio_venta as 'precio', l.cve_lote as 'lote', fecha_caducidad as caducidad, cantidad, l.fecha_alta as 'alta' FROM lotes l 
     INNER JOIN medicamentos m  ON l.cve_medicamento = m.cve_medicamento 
-    INNER JOIN operaciones o ON o.cve_lote = l.cve_lote ";
-
+    INNER JOIN operaciones o ON o.id_lote = l.id ";
     if (isset($id)) {
 
-        $query .= " WHERE l.cve_lote = '$id' ";
+        $query .= " WHERE l.id = $id";
     } else {
         $query .= " ORDER BY l.fecha_alta ASC;";
     }
@@ -209,7 +226,7 @@ function mostrar_lotes($id = NULL) {
  *
  */
 
-function valida_lote_actualizar($lote, $lote_antiguo) {
+function valida_lote_actualizar($lote, $lote_antiguo, $cve_medicamento) {
 
     $resultado = false;
 
@@ -219,7 +236,7 @@ function valida_lote_actualizar($lote, $lote_antiguo) {
         $resultado = true;
     } else {
 
-        $resultado = lote_exists($lote);
+        $resultado = lote_exists($lote, $cve_medicamento);
     }
 
 
@@ -229,29 +246,24 @@ function valida_lote_actualizar($lote, $lote_antiguo) {
 
 /* Valida la existencia del codigo */
 
-function lote_exists($lote) {
+function lote_exists($lote, $cve_medicamento) {
     global $con;
 
     $result = false;
     if (!isset($lote)) {
-
         $result = false;
     } else {
 
-        $query = "SELECT cve_lote FROM lotes WHERE cve_lote = '$lote'";
-        $sel = $con->query($query);
-        $row = $sel->num_rows;
-
-        if ($row >= 1) {
-
-            $result = false;
-        } else {
-
+        $query = "SELECT count(cve_lote) as 'total' FROM lotes WHERE cve_lote = '$lote' AND cve_medicamento = '$cve_medicamento'";
+        $res = $con->query($query);
+        $r = $res->fetch_object();
+        if ((int)$r->total >= 1) {
             $result = true;
+        } else {
+            $result = false;
         }
     }
-
-
+  
     return $result;
 }
 
@@ -260,9 +272,9 @@ function update_lote($barcode, $lote, $caducidad, $piezas, $lote_antiguo) {
     $resultado = false;
     $query = '';
     if (isset($barcode) && isset($lote) && isset($caducidad) && isset($piezas)) {
-        $query = "UPDATE lotes SET cve_lote = '$lote', fecha_caducidad = '$caducidad' WHERE cve_lote = '$lote_antiguo';";
-        $query .= "UPDATE operaciones SET cve_lote = '$lote', cantidad = $piezas ";
-        $query .= "WHERE cve_lote = '$lote_antiguo' AND id_medicamento = '$barcode';";
+        $query = "UPDATE lotes SET cve_lote = '$lote', fecha_caducidad = '$caducidad' WHERE id = $lote_antiguo;";
+        $query .= "UPDATE operaciones SET id_lote = $lote_antiguo, cantidad = $piezas ";
+        $query .= "WHERE id = $lote_antiguo AND id_medicamento = '$barcode';";
 
         $update = $con->multi_query($query);
         $resultado = $update;
@@ -540,8 +552,8 @@ function stock($cve_medicamento) {
 
     return $resultado;
 }
-
-function busca_lote($barcode) {
+//Saca
+/* function busca_lote($barcode) {
     global $con;
     $resultado = array();
     $query = "SELECT SUM(cantidad) AS stock, m.*  FROM operaciones o ";
@@ -558,6 +570,46 @@ function busca_lote($barcode) {
 
     return $resultado;
 }
+ */
+function busca_medicamento($barcode) {
+    
+    global $con;
+    $resultado = array();
+    $query = "SELECT  m.* FROM medicamentos m ";
+    $query.= " WHERE cve_medicamento = '$barcode'";
+
+    $sel = $con->query($query);
+    $row = $sel->num_rows;
+    if ($row != 0) {
+        
+     
+
+        $fetch = $sel->fetch_assoc();
+      
+        $resultado = $fetch;
+    }
+
+    
+    return $resultado;
+}
+
+function getLoteByBarcode($barcode){
+    global $con;
+    $resultado = array();
+    $sql = "SELECT * FROM lotes WHERE cve_medicamento = '$barcode' AND vigente = 1";
+    $query = $con->query($sql);
+
+    if($query){
+        $resultado = $query;
+    }
+
+    return $resultado;
+}
+
+
+
+
+
 
 //Regresar la cantidad de lotes
 function cantidad_lotes() {
@@ -640,4 +692,124 @@ function deleteSession($ms) {
         $_SESSION['medicamento'][$ms] = null;
     }
     return true;
+}
+
+
+
+function getDateIfExist($lote, $barcode){
+    global $con;
+    $result = false;
+    if(lote_exists($lote, $barcode)){
+        
+        $sql = "SELECT fecha_caducidad FROM lotes WHERE cve_lote = '$lote' AND cve_medicamento = '$barcode'";
+        $res = $con->query($sql);
+        $select = $res->fetch_assoc();
+        $result = $select['fecha_caducidad'];
+    }
+
+    return $result;
+}
+
+function getLote($lote, $cve_medicamento) {
+    global $con;
+
+    $result = false;
+    if (!isset($lote)) {
+        $result = false;
+    } else {
+
+        $query = "SELECT id FROM lotes WHERE cve_lote = '$lote' AND cve_medicamento = '$cve_medicamento'";
+        $res = $con->query($query);
+        $result = $res->fetch_object();
+    }
+  
+    return $result;
+}
+
+function medicationStock($codigo){
+    global $con;
+    $stockVigente = 0;  
+    $sqlVigente = "SELECT SUM(cantidad) as total FROM operaciones WHERE id_tipo_operacion = 1 AND id_lote IN (SELECT id FROM lotes WHERE cve_medicamento = '{$codigo}' AND vigente <>0)";
+    $sqlVendido = "SELECT SUM(cantidad) as total FROM operaciones WHERE id_tipo_operacion = 2 AND id_medicamento= '{$codigo}'";
+    $sqlCaducado = "SELECT SUM(cantidad) as total FROM operaciones WHERE id_tipo_operacion = 3 AND id_lote IN (SELECT id FROM lotes WHERE cve_medicamento = '{$codigo}' AND vigente <>1)";
+    $queryVigente = $con->query($sqlVigente);
+    $queryVendido = $con->query($sqlVendido);
+    $queryCaducado = $con->query($sqlCaducado);
+    $resVigente = $queryVigente->fetch_object();
+    $resVendido  = $queryVendido->fetch_object();
+    $resCaducado = $queryCaducado->fetch_object();
+    $stockVigente = $resVigente->total - $resVendido->total  - $resCaducado->total;
+    return $stockVigente;
+  }
+  
+function caducidad($monthInterval){
+    global $con;
+    $sql = "SELECT *,  DATEDIFF(fecha_caducidad, CURRENT_DATE()) as 'dias_restante' FROM lotes WHERE fecha_caducidad >= CURDATE() AND fecha_caducidad < DATE_ADD(CURDATE(), INTERVAL $monthInterval MONTH)"; 
+    $query = $con->query($sql);
+
+    $message = 'El siguiente lote esta por caducar ';
+    while($medicamento = $query->fetch_object()){
+        $insertMessage = "INSERT INTO mensajes VALUES(NULL, '$message', 'caducidad', 1,NOW(), '$medicamento->cve_medicamento', $medicamento->id)";
+        $con->query($insertMessage);
+    }
+
+}
+
+
+function getConfigMessage(){
+    global $con;
+    $sql = "SELECT * FROM config_message limit 1"; 
+    $query = $con->query($sql);
+    $fetch = $query->fetch_object();
+    return $fetch->meses;
+}
+
+function ejecutarCaducidadAutomatic(){
+    global $con;
+    $sql = "SELECT * FROM lotes WHERE fecha_caducidad <= CURDATE() AND vigente <> 1"; 
+    $query = $con->query($sql);
+    $message = 'Este lote de medicamento esta caducado ';
+    while($medicamento = $query->fetch_object()){
+        $update = "UPDATE FROM lotes set vigente=0 WHERE cve_medicamentos = '$medicamento->cve_medicamento' AND id_lote = $medicamento->id";
+        $con->query($update);
+        $insertMessage = "INSERT INTO mensajes VALUES(NULL, '$message', 'caducado', 1,NOW(), '$medicamento->cve_medicamento', $medicamento->id)";
+        $con->query($insertMessage);
+    }
+}
+
+function getMessageExist($medicamento, $lote){
+    global $con;
+    $result = false;
+    $sql = "SELECT * FROM mensajes WHERE id_medicamento = '$medicamento' AND id_lote = $lote"; 
+    $query = $con->query($sql);
+    
+    if($query->num_rows >= 1){
+        $result = true;
+    }
+    return $result;
+}
+
+function getAllMessage(){
+    global $con;
+    $result = false;
+    $sql = "SELECT * FROM mensajes";
+    $query = $con->query($sql);
+    return $query;
+}
+
+function getAllMessageActivado(){
+    global $con;
+    $result = false;
+    $sql = "SELECT  DATEDIFF(fecha_caducidad, CURRENT_DATE()) as 'restantes', l.fecha_caducidad as 'caducidad', m.*, l.cve_lote as 'lote', me.nombre_comercial as 'comercial' FROM mensajes m INNER JOIN lotes l on l.id = m.id_lote INNER JOIN medicamentos me ON me.cve_medicamento = m.id_medicamento WHERE m.activado=1";
+    $query = $con->query($sql);
+    return $query;
+}
+
+
+function getMedication(){
+    global $con;
+    $result = false;
+    $sql = "SELECT  DATEDIFF(fecha_caducidad, CURRENT_DATE()) as 'restantes', l.fecha_caducidad as 'caducidad', m.*, l.cve_lote as 'lote', me.nombre_comercial as 'comercial' FROM mensajes m INNER JOIN lotes l on l.id = m.id_lote INNER JOIN medicamentos me ON me.cve_medicamento = m.id_medicamento WHERE m.activado=1";
+    $query = $con->query($sql);
+    return $query;
 }

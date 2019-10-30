@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
     if (!empty($lote) && is_string($lote)) {
 
         
-        if (valida_lote_actualizar($lote, $lote_antiguo) == false ) {
+        if (valida_lote_actualizar($lote, $lote_antiguo, $barcode) == false ) {
 
             array_push($errores['errores'], "Este lote ya existe, ingrese otro");
 

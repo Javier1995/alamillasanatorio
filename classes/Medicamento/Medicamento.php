@@ -28,7 +28,7 @@ class Medicamento {
     /**
      * Get the value of cve_medicamento
      */ 
-    private function getCve_medicamento()
+    protected function getCve_medicamento()
     {
         return $this->cve_medicamento;
     }
@@ -157,4 +157,62 @@ class Medicamento {
         return $resultado;
     }
 
+
+    /**
+     * 
+     * Trae todas las entradas que fueron realizadas
+     */
+    public function getEntries($search = null, $offset = null, $limit = null) {
+
+        $where = ""; 
+        $limitation = "";
+        $orderBy =" ORDER BY o.fecha_operacion DESC";
+        $resultado = array();
+
+        if(isset($search) || $search == ''){
+            $where.= " WHERE m.cve_medicamento LIKE '%$search%' OR ";
+            $where.= "m.nombre_generico LIKE '%$search%'  OR ";
+            $where.= "l.cve_lote LIKE '%$search%' OR ";
+            $where.= "m.nombre_comercial LIKE '%$search%'  OR ";
+            $where.= "m.descripcion LIKE '%$search%' ";
+          }
+
+        if(!is_null($offset)){
+            $limitation.= ' LIMIT '.$offset;
+        }
+
+        if(!is_null($limit)){
+            $limitation.=','.$limit;
+            
+        }
+
+
+        //Extraccion de lotes de entradas
+        $query =" SELECT  l.cve_medicamento as 'clave', m.nombre_comercial as 'nombre_c', m.precio_venta as 'precio', l.cve_lote as 'lote', fecha_caducidad as caducidad, cantidad, o.fecha_operacion as 'alta', l.id as 'id_lote'";
+        $query.=" FROM operaciones o "; 
+        $query.=" INNER JOIN lotes l ON o.id_lote = l.id ";
+        $query.=" INNER JOIN medicamentos m  ON l.cve_medicamento = m.cve_medicamento ";  
+        $query.= $where.$orderBy.$limitation;
+
+        $resultado = $this->connectDB->query($query);
+        return $resultado;
+    }
+    
+    public function medicationStock(){
+      $stockVigente = 0;  
+      $sqlVigente = "SELECT SUM(cantidad) as total FROM operaciones WHERE id_tipo_operacion = 1 AND id_lote IN (SELECT id FROM lotes WHERE cve_medicamento = '{$this->getCve_medicamento()}' AND vigente <>0)";
+      $sqlVendido = "SELECT SUM(cantidad) as total FROM operaciones WHERE id_tipo_operacion = 2 AND id_medicamento= '{$this->getCve_medicamento()}'";
+      $sqlCaducado = "SELECT SUM(cantidad) as total FROM operaciones WHERE id_tipo_operacion = 3 AND id_lote IN (SELECT id FROM lotes WHERE cve_medicamento = '{$this->getCve_medicamento()}' AND vigente <>1)";
+      $queryVigente = $this->connectDB->query($sqlVigente);
+      $queryVendido = $this->connectDB->query($sqlVendido);
+      $queryCaducado = $this->connectDB->query($sqlCaducado);
+      $resVigente = $queryVigente->fetch_object();
+      $resVendido  = $queryVendido->fetch_object();
+      $resCaducado = $queryCaducado->fetch_object();
+
+      $stockVigente = $resVigente->total - $resVendido->total  - $resCaducado->total;
+      return $stockVigente;
+    }
+    
+  
 }

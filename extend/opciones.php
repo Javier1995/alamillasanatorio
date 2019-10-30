@@ -6,8 +6,8 @@
             </a>
 
             <ul>
-                <li><a class="btn-floating green" href="entradas" title="Editar entradas"><i class="material-icons">edit</i></a></li>
-                <li><a class="btn-floating orange" href="agregar_lote"  title="Entradas de medicamento"><i class="material-icons" >arrow_upward</i></a></li>
+                <li><a class="btn-floating orange" href="agregar_lote"  title="Entradas de medicamento"><i class="material-icons" title="entrada de Medicamentos">arrow_upward</i></a></li>
+              <!--   <li><a class="btn-floating red darken-4" href="caducidad"  title="Caducados"><i class="material-icons">arrow_downward</i></a></li> -->
                 <li><a class="btn-floating yellow darken-4" href="agregar_productos" title="Agregar medicamento"><i class="material-icons">add_circle_outline</i></a></li>
                 <li><a class="btn-floating red" href="./" title="Medicamentos"><i class="material-icons">view_list</i></a></li>
             </ul>

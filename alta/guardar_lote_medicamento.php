@@ -16,20 +16,12 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
     if (empty($piezas)) {
         array_push($errores['errores'], "No ha introducido la cantidad piezas");
     } 
-         
-    if (!empty($lote) && is_string($lote)) {
-
-            $existe_lote = lote_exists($lote);
-            if($existe_lote == false ){
-                array_push($errores['errores'], "Este lote ya existe, ingrese otro");
-            } else {
-                $lote_valido = true;
-            }
- 
-     } else {
-         $lote_valido = false;
-         array_push($errores['errores'], "El campo de lotes esta vacío");
-     }
+    
+     $lote_valido = true;
+    if (empty(trim($lote))) {
+        $lote_valido = false;
+        array_push($errores['errores'], "El campo de lotes esta vacío");
+     } 
 
 
      if (!empty($caducidad) && is_string($caducidad)) {
@@ -44,8 +36,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
      
       if(count($errores['errores']) == 0) {
 
+      
+
         $datos = guardar_lote($barcode, $lote, $caducidad, $piezas);
-        
+       
         if($datos == false){
             array_push($errores['errores'], "Error al guardar");
         }

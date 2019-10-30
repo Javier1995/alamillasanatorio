@@ -29,6 +29,7 @@ function listar_venta(e, code_data = null, descuento = null) {
                 carga.html("");
             },
             success: function (dato) {
+                console.log(dato);
                 var tablRow = '';
                 var error = '';
                 var warning = '';
@@ -333,7 +334,8 @@ function PaginationOrder(page = null, limit = null) {
 
                 var fast_back = (result.current_page <= 0) ? 'class="disabled"' : 'class="waves-effect"  onclick="PaginationOrder(' + ((result.current_page + 1 - result.pages)) + ',' + result.limit + ')"';
                 var fast_forward = ((result.pages == result.current_page + 1)) ? 'class="disabled"' : 'class="waves-effect"  onclick="PaginationOrder(' + ((result.pages)) + ',' + result.limit + ')"';
-
+                    
+                
 
                 table = '<div class="card">';
                 table += '<div class="card-content">';

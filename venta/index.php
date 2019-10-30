@@ -18,7 +18,7 @@
     <div class="col s12 l3">
             <div class="card blue lighten-3 ">
                 <div class="card-content">
-                    <span class="card-title">Compras <i class="material-icons small left">
+                    <span class="card-title">Ventas <i class="material-icons small left">
                         view_list
                         </i></span>
                     <div class="row">

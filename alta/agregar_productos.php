@@ -3,7 +3,8 @@
 <style>
   .select-dropdown{
         overflow-y: auto !important;
-    }</style>
+    }
+    </style>
 <?php if(isset($_SESSION['nick'])): ?>
 <?php date_default_timezone_set('America/Monterrey');
   $fecha_dia =date('Y-m-d'); ?>
@@ -21,11 +22,11 @@
                             <input value="<?=isset($_GET['code'])?$_GET['code']:''?>" autofocus='on' type="text" name="barcode" id="barcode" maxlength="13" required title="Introduzca el codigo de barra del producto" onkeyup="this.value=Numeros(this.value)" >
                         </div>
                         <div class="col input-field s12 l4 xl4 ">
-                            <label for="nombregenerico">Nombre Generico*</label>
+                            <label for="nombregenerico">Nombre Comercial*</label>
                             <input type="text" name="nombregenerico" id="nombregenerico" onkeyup="may(this.value, this.id)" required>
                         </div>
                         <div class="col input-field s12 l4 xl4">
-                            <label for="nombrecomercial">Nombre Comercial*</label>
+                            <label for="nombrecomercial">Formula*</label>
                             <input type="text" name="nombrecomercial" id="nombrecomercial" onkeyup="may(this.value, this.id)" required>
                         </div>
                     </div>

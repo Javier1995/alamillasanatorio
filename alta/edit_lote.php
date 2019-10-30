@@ -17,6 +17,7 @@
       $id = $con->real_escape_string(htmlentities($dato));
       $lotes = mostrar_lotes($id);
       $lote = $lotes->fetch_assoc();
+      
  ?>
 <div class="row">
     <div class="col s12 m12 l12 xl12">
@@ -51,7 +52,7 @@
                         </tbody>
                     </table>
                     <button class="btn" title="Modificar" id="agregar" onclick="modificar_lote('<?=$id?>','<?=$lote['clave']?>')">Editar<i class="material-icons right">border_color</i> </button>
-                    <a class="btn red" href="entradas.php">Cancelar<i class="material-icons right">cancel</i> </a>
+                    <a class="btn red" href="../">Cancelar<i class="material-icons right">cancel</i> </a>
                 </div>
                 <div id="respuesta"></div>
 

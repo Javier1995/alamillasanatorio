@@ -2,6 +2,8 @@
 
 require_once '../../conexion/conexion.php';
 require_once '../../extend/helpers.php';
+
+use Medicamento\Medicamento;
 header("Content-Type: application/json; charset=utf-8");
 $barcode = filter_input(INPUT_POST, 'codigo');
 $medicine = medicine_exists($barcode);
@@ -15,8 +17,7 @@ if (!empty($barcode)) {
 
         //Verifica el stock
         $data = $medicine->fetch_object();
-        $stock = stock($data->cve_medicamento);
-
+        $stock = medicationStock($data->cve_medicamento);
         if (!empty($_SESSION['medicamento']['cart']) && count($_SESSION['medicamento']['cart']) >= 1) {
             foreach ($_SESSION['medicamento']['cart'] as $index => $value) {
 
@@ -30,7 +31,7 @@ if (!empty($barcode)) {
         if ($stock == 0) {
             $_SESSION['medicamento']['warning'] = "No hay stock para este medicamento";
         } elseif (isset($stock_envia) && $stock == $stock_envia) {
-            $_SESSION['medicamento']['warning'] = "El medicamento {$nombre} cuenta con un stock máximo de $stock pieza(s)";
+            $_SESSION['medicamento']['warning'] = "El medicamento {$nombre} cuenta con un stock disponible de $stock pieza(s)";
         } else {
 
             $total = 0;

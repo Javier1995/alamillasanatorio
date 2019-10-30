@@ -30,7 +30,8 @@
         $("#alert_box_warning").fadeOut("slow");
     });
 
-
+    //Solucion para que el datepicker no se muera
+    $('.datepicker').on('mousedown',function(event){ event.preventDefault(); })
 
     $('.dropdown-button').dropdown({
         inDuration: 300,
@@ -106,6 +107,10 @@
         });
 
     }
+    
+  $(document).ready(function(){
+    $('ul.tabs').tabs();
+  });
 
     //cerrar el modal
     $('#cerrar_modal2').click(function () {
@@ -115,8 +120,8 @@
         $('#modal1').modal('close');
     });
 
-    /* Inicio de la busqueda */
-    $('#buscar').click(function () {
+    /*Inicio de la busqueda*/
+    /* $('#buscar').click(function () {
         $.post('buscar_medicamento.php', {
             barcode: $('#codigo_barras').val(),
             beforeSend: function () {
@@ -126,7 +131,7 @@
             $('#busqueda').html(respuesta);
         });
 
-    });
+    }); */
     /* Fin de la busqueda */
 
 

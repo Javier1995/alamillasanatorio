@@ -57,11 +57,10 @@
                                 <table class="responsive-table striped centered">
 
                                     <thead>
-
                                         <tr>
                                             <th>#</th>
-                                            <th>Codigo</th>
-                                            <th>Nombre Generico</th>
+                                            <th>Código</th>
+                                            <th>Formulas</th>
                                             <th>Nombre Comercial</th>
                                             <th>Presentacion</th>
                                             <th>Precio U.</th>
@@ -69,9 +68,7 @@
                                             <th>Importe($)</th>
                                             <th title="Descuento">Desc(%)</th>
                                             <th>Borrar</th>
-
                                         </tr>
-
                                     </thead>
 
                                     <tbody id="tbody">
@@ -186,21 +183,16 @@
 
 
                 </div>
-
             </div>
+    </div>
 
-
-        </div>
-
-
-
-
-
-
-        <?php include_once '../extend/preloader.php'; ?>
-        <?php include_once '../extend/errorMessage.php' ?>
-        <?php include '../extend/scripts.php'; ?>
-        <script src="app_venta.js"></script>
+    <!--Extensiones-->
+    
+    <?php include_once '../extend/preloader.php'; ?>
+    <?php include_once '../extend/errorMessage.php' ?>
+    <?php include '../extend/scripts.php'; ?>                              
+    <script src="app_venta.js"></script>
+    <script src="../js/Pagination.js"></script>
     <?php include_once '../extend/footer.php'; ?>
     <!--        <script>
             //Notifica el usuario que la compra sera borrada si cambia de pagina

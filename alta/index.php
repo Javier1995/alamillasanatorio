@@ -22,7 +22,7 @@
 
                     <div class="col l6 m6 xl6 s12">
                         <div class="input-field">
-                            <button class="btn" id="impresion_inventario"><i class="material-icons left">picture_as_pdf</i> Inventario</button>
+                            <a class="btn" href="inventario_pdf.php" target="_blank"><i class="material-icons left">picture_as_pdf</i> Inventario</a>
                         </div>
                     </div>
 

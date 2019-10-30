@@ -187,7 +187,7 @@ $("#codigo").on("keyup", function (e) {
             alert("error en el servidor");
         },
         success: function (data) {
-
+           
             console.log(data);
             var datos = JSON.parse(data);
             var muestra = "";
@@ -195,9 +195,7 @@ $("#codigo").on("keyup", function (e) {
                 showError = '<ol>';
 
                 for (var i = 0; i < datos.length; i++) {
-
                     muestra += "<li>" + datos[i] + "</li>";
-
                 }
 
                 muestra += '</ol>';
@@ -208,18 +206,50 @@ $("#codigo").on("keyup", function (e) {
                 document.getElementById("codigo").value = '';
 
             } else {
+              
                 document.getElementById("codigo").value = '';
                 muestra = '<div class="row"><table class="bordered striped centered highlight responsive-table">';
 
                 muestra += '<thead><tr><th>Codigo</th><th>Nombre Comercial</th><th>Precio Salida</th><th>Stock</th><th>Lote</th><th>Caducidad</th><th>Cantidad</th></tr></thead><tbody>';
 
-                muestra += '<tr><td>' + datos.cve_medicamento + '</td><td>' + datos.nombre_comercial + '</td><td>$' + datos.precio_venta + '</td><td>'+datos.stock+'</td><td><input type="text" id="lote" onkeyup="may(this.value, this.id)"/></td><td><input type="text" class="datepicker" id="caducidad"></td><td><input type="text" id="cantidad" onkeyup="this.value=Numeros(this.value)"/></td><td><button class="btn" id="agregar" onclick="lote_guardar(' + datos.cve_medicamento + ')"/>Agregar</button></td></tr></tbody>';
-                muestra += '</table></div>';
+                muestra += '<tr><td>' + datos.cve_medicamento + '</td><td>' + datos.nombre_comercial + '</td><td>$' + datos.precio_venta + '</td><td>'+datos.inventario+'</td><td><input type="text" id="lote" class="uppercase"/></td><td><input type="text" class="datepicker" id="caducidad"></td><td><input type="text" id="cantidad" onkeyup="this.value=Numeros(this.value)"/></td><td><button class="btn" id="agregar" onclick="lote_guardar(' + datos.cve_medicamento + ')"/>Agregar</button></td></tr></tbody>';
+                muestra += '</table></div> <input type="hidden" value="'+datos.cve_medicamento+'" id="barcode">';
                 respuesta.innerHTML = muestra;
-                
+              
+                $('.uppercase').on('keyup', function () {
+                    return this.value = this.value.toUpperCase();
+                })
+                //buscar lote con barcode
+                $("#lote").on('keyup',function(){
+                    $.ajax({
+                        url: '../alta/buscar_lote.php',
+                        type:"post",
+                        data:{
+                            lote:this.value,
+                            barcode: $("#barcode").val()
+                        },
+                        success:function(data){
+                            
+                             dato = JSON.parse(data);
+                             console.log();
+                            if(dato.fecha.length !== 0){
+                                $("#caducidad").val(dato.fecha[0]).attr("disabled","disabled").removeClass("datepicker");
+                                $(".picker").hide();
+                                
+                            } else {
+                                console.log('hey');
+                                $(".picker").show();
+                                $("#caducidad").val("").removeAttr("disabled").addClass("datepicker");
+                                
+                            }
+                        }
+
+                    });
+                    })
+
                 var date = new Date();
                 var today = '12/31/' + date.getFullYear();
-                
+                $('.datepicker').on('mousedown',function(event){ event.preventDefault(); })
                 //Datepicker para fechas
                  $('.datepicker').pickadate({
                    //Traduccion del formato
@@ -243,6 +273,9 @@ $("#codigo").on("keyup", function (e) {
 
             }
 
+        },
+        error:(error)=>{
+         document.write(error.responseText);
         }
 
     });
@@ -288,7 +321,7 @@ function lote_guardar(codigo) {
             alert("error en el servidor");
         },
         success: function (data) {
-
+           
             console.log(data);
             var datos = JSON.parse(data);
             var muestra = "";
@@ -313,6 +346,8 @@ function lote_guardar(codigo) {
                 swal("Bien", "Se ha guardado correctamente", "success");
             }
 
+            
+
         }
 
     });
@@ -321,8 +356,8 @@ function lote_guardar(codigo) {
 
 
 
-function modificar_lote(lote_antiguo, codigo) {
-
+function modificar_lote(id, codigo) {
+  
     var lote = $("#lote").val(),
             cantidad = $("#cantidad").val(),
             caducidad = $("#caducidad").val();
@@ -336,7 +371,7 @@ function modificar_lote(lote_antiguo, codigo) {
             lote: lote,
             piezas: cantidad,
             caducidad: caducidad,
-            lote_antiguo: lote_antiguo
+            lote_antiguo: id
         },
         error: function () {
             alert("error en el servidor");
@@ -365,7 +400,7 @@ function modificar_lote(lote_antiguo, codigo) {
 
                 $("#respuesta table").fadeOut("clip");
                 swal("Bien", "Se ha actualizado correctamente", "success").then(() => {
-                    location.href = 'entradas.php';
+                    location.href = 'agregar_lote';
                 });
             }
 
@@ -497,4 +532,4 @@ var date = new Date();
         weekdaysShort:['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab' ],
         weekdaysLetter:['D', 'L', 'M', 'X', 'J', 'V', 'S' ],
       });
-      
+    

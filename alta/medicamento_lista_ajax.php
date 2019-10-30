@@ -12,14 +12,19 @@ $offset = 0 + ($current_page * $limit);
 $med = new Medicamento();
 $rows = $med->getMedication($search);
 $medicamentos = $med->getMedication($search, $offset, $limit);
+
+
 $paginas = ceil($rows->num_rows/$limit);
 $adjacent = 2;
 $json_data = array();
-$header = array('Codigo','Nombre Comercial', 'Formula','Presentacion' ,'Precio Entrada', 'Precio salida', 'Categoria', 'stock Minimo', 'En inventario');
+$header = array('Codigo','Nombre Comercial', 'Formula','Presentacion' ,'Categoria','Precio Entrada' ,'Precio salida','stock Minimo', 'En inventario');
 $json_data = array('datos'=>array(),'pages'=>$paginas, 'current_page'=>$current_page, 'adjacent'=>$adjacent, 'limit'=>$limit, 'header'=>$header, 'search'=>$search);
 
 while($medicamento = $medicamentos->fetch_assoc()){
-    
+
+     //Coloca inventario
+     $med->setCve_medicamento($medicamento['cve_medicamento']);
+     $medicamento['inventario'] = $med->medicationStock();
      array_push($json_data['datos'], $medicamento);
 
 }

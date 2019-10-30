@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
          $existeCodigo = barcodeExists($barcode); 
          if ($existeCodigo == false) {
 
-          array_push($errores['errores'], 'Ya existe este codigo de barrar. <a href="agregar_lote.php" class="black-text">Click aquí</a> para hacer más entradas con respecto al codigo ya registrado');
+          array_push($errores['errores'], "Ya existe este codigo de barrar. <a href='agregar_lote.php?barcode=$barcode' class='black-text'>Click aquí</a> para hacer más entradas con respecto al codigo ya registrado");
 
          } elseif(strlen($barcode) != 13) {
 
@@ -119,11 +119,12 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
           
      if (!empty($lote) && is_string($lote)) {
 
-            $existe_lote = lote_exists($lote);
+            $existe_lote = lote_exists($lote, $barcode);
             if($existe_lote == false){
-                array_push($errores['errores'], "Este lote ya existe, ingrese otro");
-            } else {
                 $lote_valido = true;
+            } else {
+                array_push($errores['errores'], "Este lote ya existe, ingrese otro");
+                
             }
  
      } else {
