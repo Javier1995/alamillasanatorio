@@ -752,6 +752,7 @@ function caducidad($monthInterval){
         $insertMessage = "INSERT INTO mensajes VALUES(NULL, '$message', 'caducidad', 1,NOW(), '$medicamento->cve_medicamento', $medicamento->id)";
         $con->query($insertMessage);
     }
+    
 
 }
 
@@ -766,15 +767,34 @@ function getConfigMessage(){
 
 function ejecutarCaducidadAutomatic(){
     global $con;
-    $sql = "SELECT * FROM lotes WHERE fecha_caducidad <= CURDATE() AND vigente <> 1"; 
+    $sql = "SELECT * FROM lotes WHERE fecha_caducidad <= CURDATE() AND vigente <> 0"; 
     $query = $con->query($sql);
     $message = 'Este lote de medicamento esta caducado ';
     while($medicamento = $query->fetch_object()){
-        $update = "UPDATE FROM lotes set vigente=0 WHERE cve_medicamentos = '$medicamento->cve_medicamento' AND id_lote = $medicamento->id";
-        $con->query($update);
-        $insertMessage = "INSERT INTO mensajes VALUES(NULL, '$message', 'caducado', 1,NOW(), '$medicamento->cve_medicamento', $medicamento->id)";
-        $con->query($insertMessage);
+        
+        $update = "UPDATE lotes set vigente = 0 WHERE cve_medicamento = '$medicamento->cve_medicamento' AND cve_lote = '$medicamento->cve_lote'";
+        $up_result = $con->query($update);
+        
+        if($up_result){
+                //Si no existe agrega un nuevo mensaje
+            if(getMessageExist($medicamento->cve_medicamento, $medicamento->id) != true){
+                
+                $insertMessage = "INSERT INTO mensajes VALUES(NULL, '$message', 'caducado', 1,NOW(), '$medicamento->cve_medicamento', $medicamento->id)";
+                $con->query($insertMessage);
+                
+               
+            }
+
+            if(getMessageExist($medicamento->cve_medicamento, $medicamento->id)){
+                 //deshabilita el mensaje
+                 $up_message = "UPDATE mensajes set activado = 0 WHERE id_medicamento= '$medicamento->cve_medicamento' AND id_lote = $medicamento->id";  
+                 $message = $con->query($up_message);
+                      
+                }
+        } 
     }
+  
+    
 }
 
 function getMessageExist($medicamento, $lote){
@@ -800,7 +820,7 @@ function getAllMessage(){
 function getAllMessageActivado(){
     global $con;
     $result = false;
-    $sql = "SELECT  DATEDIFF(fecha_caducidad, CURRENT_DATE()) as 'restantes', l.fecha_caducidad as 'caducidad', m.*, l.cve_lote as 'lote', me.nombre_comercial as 'comercial' FROM mensajes m INNER JOIN lotes l on l.id = m.id_lote INNER JOIN medicamentos me ON me.cve_medicamento = m.id_medicamento WHERE m.activado=1";
+    $sql = "SELECT DATEDIFF(fecha_caducidad, CURRENT_DATE()) as 'restantes', l.fecha_caducidad as 'caducidad', m.*, l.cve_lote as 'lote', me.nombre_comercial as 'comercial' FROM mensajes m INNER JOIN lotes l on l.id = m.id_lote INNER JOIN medicamentos me ON me.cve_medicamento = m.id_medicamento WHERE m.activado = 1";
     $query = $con->query($sql);
     return $query;
 }

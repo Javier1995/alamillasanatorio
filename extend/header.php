@@ -28,16 +28,16 @@ if (!isset($_SESSION['nick'])) {
             <?php
             
             //Guarda Mensajes
-            $mesNumber = getConfigMessage();
+            $monthInterval = getConfigMessage();
             $mensajes = getAllMessage();
 
             if($mensajes->num_rows == 0){
-                caducidad((int)$mesNumber);
+                caducidad((int)$monthInterval);
             } else{
 
                 while($mensaje = $mensajes->fetch_object()){
                 if(getMessageExist($mensaje->id_medicamento, $mensaje->id_lote) !== true){
-                        caducidad((int)$mesNumber);
+                        caducidad((int)$monthInterval);
                     } 
                 }
             }
